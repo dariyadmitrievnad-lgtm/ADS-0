@@ -1,8 +1,12 @@
 // Copyright 2021 NNTU-CS
 
 int gcd(int a, int b) {
-	if (a < 0) a = -a;
-    if (b < 0) b = -b;
+	if (a < 0) {
+        a = -a;
+    }
+    if (b < 0) {
+        b = -b;
+    }
     while (b != 0) {
         int r = a % b;
         a = b;
